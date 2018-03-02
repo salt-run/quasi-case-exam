@@ -83,3 +83,13 @@ production:
   database: quasi-case_production
   username: quasi-case
   password: <%= ENV['QUASI-CASE_DATABASE_PASSWORD'] %>
+
+staging:
+  <<: *default
+  database: quasi-case_staging
+  username: quasi-case
+  password: <%= ENV['QUASI-CASE_DATABASE_PASSWORD'] %>
+
+
+
+  
